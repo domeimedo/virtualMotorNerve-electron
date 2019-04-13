@@ -1,0 +1,3 @@
+[submodule "internal/viewer"]
+	path = internal/viewer
+	url = https://github.com/domeimedo/virtualMotorNerve-html

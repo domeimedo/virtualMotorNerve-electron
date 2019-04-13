@@ -1,0 +1,33 @@
+{
+  "name": "virtual-motor-nerve-electron",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-viewer:win": "pushd internal\\viewer && npm install && npm run build-all:win && popd && npm run dist-viewer",
+    "dist-viewer": "cpx \"./internal/viewer/dist/*.*\" \"./internal/root\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domeimedo/virtualMotorNerve-electron.git"
+  },
+  "author": "Medo Domei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/domeimedo/virtualMotorNerve-electron/issues"
+  },
+  "homepage": "https://github.com/domeimedo/virtualMotorNerve-electron#readme",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "ws": "^6.2.1"
+  }
+}
